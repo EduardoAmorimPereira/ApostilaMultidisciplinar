@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1, h2 {
+  font-weight: 750;
+}
+
+p {
+  font-weight: 400;
+}
+
+#titulo-principal {
+  font-size: 2.5rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #467194;
+  padding: 20px;
+}
+
+.header img {
+  margin-bottom: 10px;
+}
+
+.header h2 {
+  font-weight: 400;
+  color: white;
+  background-color: black;
+  padding: 5px 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  font-size: clamp(16px, 2vw, 30px);
+  background-color: #f0e6d3;
+  flex-wrap: wrap;
+}
+
+a {
+  color: #334155;
+  text-decoration: none;
+  transition: color 0.4s ease, background-color 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+a:hover {
+  color: #2563eb;
+  background-color: #e2e8f0;
+}
+
+#a-mat {
+  color: red;
+  text-decoration: underline black;
+}
+
+#a-pt {
+  color: green;
+  text-decoration: underline black;
+}
+
+#a-ciencias {
+  color: blue;
+  text-decoration: underline black;
+}
+
+.section {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.section p {
+  max-width: 600px;
+  margin: 0 auto 10px auto;
+  line-height: 1.6;
+}
+
+.materias {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+#wiki {
+  font-size: 20px;
+  text-decoration: underline 3px black;
+}
+
+.footer {
+  background-color: #FCD34D;
+  color: #1F2933;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+hr {
+  border: 3px solid black;
+  margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  nav {
+    gap: 0.5rem;
+  }
+
+  .section p {
+    padding: 0 10px;
+  }
+}
+.materia {
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Cores diferentes por matéria */
+.matematica { background-color: #EF4444; }      /* vermelho */
+.portugues { background-color: #10B981; }       /* verde */
+.ciencias { background-color: #3B82F6; }        /* azul */
+.historia { background-color: #F59E0B; }        /* laranja */
+.geografia { background-color: #8B5CF6; }      /* roxo */
+.ingles { background-color: #06B6D4; }          /* ciano */
+.quimica { background-color: #EC4899; }         /* rosa */
+.fisica { background-color: #F97316; }          /* laranja escuro */
+.biologia { background-color: #22C55E; }        /* verde claro */
+.artes { background-color: #6366F1; }           /* azul escuro */
+.educacao-fisica { background-color: #EAB308; } /* amarelo escuro */
+.informatica { background-color: #14B8A6; }     /* verde água */
+.filosofia { background-color: #F43F5E; }       /* pink forte */
+.sociologia { background-color: #0EA5E9; }      /* azul claro */
+
+.materia:hover {
+  transform: translateY(-3px);
+  opacity: 0.85;
+}
